@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projecto2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#">УСЛУГИ</a></li>
+                <li><a href="#">ПРОЕКТЫ</a></li>
+                <li><a href="#">О НАС</a></li>
+                <li><a href="#">ЦЕНЫ</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+                <li class="blue">+7 342 225-00-75</li>
+                <li ><button id="openForm">КОНСУЛЬТАЦИЯ</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="slider-container">
+        <div class="info">
+            <h1>
+                Разработка и продвижение сайтов
+            </h1>
+            <p>
+                Эффективные решения для бизнеса в интернете
+            </p>
+            <button onclick="plusSlides(1)">Посмотреть объекты &rarr;</button>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="mySlides fade"> 
+                <img src="img/slideImg.png" alt="">
+            </div>
+            <div class="mySlides fade"> 
+                <img src="img/slideImg2.jpg" alt="">
+            </div>
+            <div class="mySlides fade"> 
+                <img src="img/slideImg3.jpg" alt="">
+            </div>
+            <div class="mySlides fade"> 
+                <img src="img/slideImg.png" alt="">
+             </div>
+        </div>
+    </div>
+    <div id="popup">
+    <div class="form-container">
+            <div class="form-content">
+                <div id="closeWindow"></div>
+                <div class="form-title">
+                    <h1>
+                            С РАДОСТЬЮ ОБСУДИМ
+                            ВАШУ ИДЕЮ
+                    </h1>
+                    <p>
+                            Просто расскажите о своих задумках, а мы придумаем, каких воплотить!
+                    </p>
+                </div>
+                <div class="main-form">
+                    <form action="mailto:email@example.com" method="POST" id="main-form">
+                        <div class="fields">
+                                <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+                                <input type="number" name="phone" id="phone" placeholder="+7 (___) ___-__-__">
+                        </div>
+                        <textarea name="project" id="project" cols="30" rows="11" placeholder="Расскажите немного о Вашем проекте"></textarea>
+                        <div class="attaching">
+                                <img src="img/icon6.png" alt="Прикрепите свой файл">
+                                <p>Прикрепить файл</p>
+                            </div>
+                            <div class="agreement">
+                                <input type="submit" id="sendForm" value="Отправить">
+                                <input type="checkbox" checked id="check">
+                                <label for="check">Я согласен на обработку персональных данных</label>
+                        </div>  
+                    </form>
+                </div>
+                
+            </div>
+    </div>
+    </div>
+    <div class="content">
+        <div class="row1">
+            <div class="block-small">
+                <h5>
+                    сайт официального
+                    дистрибьютора «Exxon Mobil»
+                </h5>
+                <button>корпоративный сайт</button>
+            </div>
+            <div class="block-large">
+                <h5>
+                        Бот-консультант федерального
+                        застройщика «Талан» 
+                </h5>
+                <button>чат-бот</button>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="block-large">
+                    <h5>
+                        сайт онлайн фитнес-клуба «TeenWeek»
+                    </h5>
+                    <button>веб-приложение</button>
+                    <button>брендинг</button>
+            </div>
+            <div class="block-small">
+                    <h5>
+                            дизайн и надежная
+                            поддержка магазина «Baseg»
+                    </h5>
+                    <button>интернет-магазин</button>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="first">
+                    <h5>
+                            Красивые решения для
+                            производства насосов ППД
+                    </h5>
+                    <button>корпоративный сайт</button>
+            </div>
+            <div class="sec">
+                    <h5>
+                            Сайт кабельной и электропродукции «Кайрос инжиниринг»
+                    </h5>
+                    <button>корпоративный сайт</button>
+            </div>
+            <div class="third">
+                    <h5>
+                            Ярко представили работы
+                            для «ГеоСпецТехнология»
+                    </h5>
+                    <button>корпоративный сайт</button>
+                    <button>брендинг</button>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button id="lastBtn">Показать еще +</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/validate-form.js"></script>
+
+</body>
+</html>
